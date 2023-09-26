@@ -1,0 +1,26 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Problemas</title>
+</head>
+<body>
+    <h1>Funcionário Premiado</h1>
+    <div id="premio"></div>
+
+    <script>
+        let funcionario = prompt("Digite o nome do funcionário");
+        let valor = Number(prompt("Digite o valor estabelecido de vendas a ser alcançado"));''
+        let vendas = Number(prompt("Digite qual foi o valor de vendas do funcionário."));
+
+        if (vendas >= valor) 
+          situacao = "Ganhou!";
+        else if (vendas < valor)
+          situacao = "Não ganhou!";
+       
+        document.getElementById("premio").innerHTML = "Funcionário: " + funcionario + "</br>" + "Situação: " + situacao;
+        
+    </script>
+    
+</body>
+</html>

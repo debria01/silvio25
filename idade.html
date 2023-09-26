@@ -1,0 +1,32 @@
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Lista de Problemas</title>
+</head>
+
+<body>
+  <h1>Calculando as idades</h1>
+  <div id="idade"></div>
+  
+  <script>
+    let pessoa1 = prompt("Digite o nome da primeira pessoa");
+    let data1 = Number(prompt("Digite o ano de nascimento"));
+    let pessoa2 = prompt("Digite o nome da segunda pessoa");
+    let data2 = Number(prompt("Digite o ano de nascimento"));
+  
+    let idade1 = 2023 - data1
+    let idade2 = 2023 - data2
+  
+    if (idade1 < idade2 ) 
+    resultado = pessoa1;
+    
+    else if (idade2 < idade1)
+    resultado = pessoa2;
+    
+    document.getElementById("idade").innerHTML = "Primeira pessoa: " + pessoa1 + "</br>" + "Idade: " + idade1 + "</br>" + "Segunda pessoa: " + pessoa2 + "</br>" + "Idade: " + idade2 + "</br>" + "A pessoa mais nova é: " + resultado;
+  </script>
+  
+</body>
+</html>
